@@ -15,7 +15,27 @@
 <body>
 
   <header>
-    <img src="header-bg.jpg" alt="Santhoshni">
+    <div id="tsparticles" class="particles"></div>
+    <nav class="top-nav" aria-label="Main Navigation">
+      <div class="nav-inner">
+        <a href="#about">ABOUT ME</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#projects">HACKATHON</a>
+        <a href="#certifications">CERTIFICATIONS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="hero-content" data-aos="fade-up">
+        <h1>Hello, I'm <span class="typed-name"></span></h1>
+        <p class="hero-sub">B.Tech IT student • Aspiring Fullstack Developer • AI Enthusiast</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <!-- ABOUT -->
@@ -146,19 +166,10 @@
   <footer>
     <p>© 2025 Santhoshni S | Crafted with ❤️</p>
   </footer>
-  <!-- AOS -->
+  <!-- tsParticles, AOS, Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.7.2/tsparticles.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-
-  <!-- Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    new Typed(".typed-name", {
-      strings: ["Santhoshni S", "Web Developer", "AI Enthusiast", "Problem Solver"],
-      typeSpeed: 80,
-      backSpeed: 40,
-      loop: true
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
