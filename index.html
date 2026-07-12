@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Santhoshni S - B.Tech Information Technology student & Junior Web Developer. View projects, skills, certifications, and professional journey.">
+  <title>Santhoshni S | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Ambient Glowing Blobs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Interactive Particle Background Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">Santhoshni.S</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section-container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h3>Welcome to my space</h3>
+          <h1>Hi, I'm <span class="gradient-text">Santhoshni S</span></h1>
+          <div class="typewriter-container">
+            <span class="typewriter" id="typewriter-text"></span>
+          </div>
+          <p class="hero-description">
+            I am a motivated B.Tech Information Technology student at Kumaraguru College of Technology. Passionate about
+            software engineering, web development, and backend architecture, I design robust, interactive digital
+            experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary" id="btn-hero-contact">
+              Get in Touch
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#projects" class="btn btn-secondary" id="btn-hero-projects">View Projects</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/santhoshni20" target="_blank" class="social-icon" aria-label="GitHub"
+              id="social-github">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/santhoshni-s-95b7b1290/" target="_blank" class="social-icon"
+              aria-label="LinkedIn" id="social-linkedin">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://leetcode.com/u/Santhoshni_S/" target="_blank" class="social-icon" aria-label="LeetCode"
+              id="social-leetcode">
+              <span style="font-weight: 700; font-size: 0.85rem; font-family: var(--font-heading);">LC</span>
+            </a>
+            <a href="https://www.hackerrank.com/profile/santhoshni0820" target="_blank" class="social-icon"
+              aria-label="HackerRank" id="social-hackerrank">
+              <span style="font-weight: 700; font-size: 0.85rem; font-family: var(--font-heading);">HR</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <div class="hero-image-wrapper">
+            <img src="profile_avatar.png" alt="Santhoshni S profile" class="hero-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Details Section -->
+    <section id="about" class="section-container reveal">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-bio">
+          <p>
+            I am currently pursuing a B.Tech in Information Technology at Kumaraguru College of Technology. With a CGPA
+            of 8.38, I am highly focused on building modern web applications, sharpening my data structures and
+            algorithms in Java, and exploring full-stack engineering tools.
+          </p>
+          <p>
+            My journey includes hands-on roles as a Web Developer Intern at Bini Technologies, where I work with
+            ASP.NET, C#, and cross-platform mobile app integrations. I actively participate in hackathons and workshops,
+            continuously expanding my toolkit in modern AI, cloud technologies, and agile software development.
+          </p>
+
+          <div class="interests-container">
+            <h3>Personal Interests</h3>
+            <div class="interest-tags">
+              <span class="interest-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+                Building Websites
+              </span>
+              <span class="interest-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 8v4l3 3"></path>
+                </svg>
+                Self-Improvement & Goal Setting
+              </span>
+              <span class="interest-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                Watching Epics (Mahabharatham)
+              </span>
+              <span class="interest-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M6 12A6 6 0 0 1 18 12"></path>
+                </svg>
+                Watching Cricket
+              </span>
+            </div>
+          </div>
+
+          <ul class="info-list">
+            <li class="info-item">
+              <span class="info-label">Date of Birth</span>
+              <span class="info-value">August 20, 2006</span>
+            </li>
+            <li class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-value">Madurai, Tamil Nadu, India</span>
+            </li>
+            <li class="info-item">
+              <span class="info-label">Languages</span>
+              <span class="info-value">English, Tamil, Hindi, German</span>
+            </li>
+            <li class="info-item">
+              <span class="info-label">Soft Skills</span>
+              <span class="info-value" style="font-size: 0.95rem; font-weight: normal; color: var(--text-muted);">
+                Leadership, Collaboration, Time Management, Communication, Problem Solving, Analytical Thinking
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass-card tilt-card">
+          <h3 style="margin-bottom: 24px; font-size: 1.4rem;">Education Timeline</h3>
+          <div class="edu-timeline">
+            <div class="edu-card">
+              <span class="edu-year">2023 - 2027</span>
+              <h4 class="edu-degree">B.Tech Information Technology</h4>
+              <p class="edu-school">Kumaraguru College of Technology</p>
+              <p class="edu-score">CGPA: 8.38 / 10</p>
+            </div>
+            <div class="edu-card">
+              <span class="edu-year">2019 - 2023</span>
+              <h4 class="edu-degree">Higher Secondary Education</h4>
+              <p class="edu-school">ST. Michael Matric Higher Secondary School</p>
+              <p class="edu-score">Percentage: 94.16%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-container reveal">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-tabs">
+        <button class="tab-btn active" onclick="switchTab(event, 'languages')">Programming & DSA</button>
+        <button class="tab-btn" onclick="switchTab(event, 'web')">Web & Databases</button>
+        <button class="tab-btn" onclick="switchTab(event, 'tools')">Tools & IDEs</button>
+        <button class="tab-btn" onclick="switchTab(event, 'concepts')">Other Concepts</button>
+      </div>
+
+      <!-- Languages & DSA Tab -->
+      <div id="languages" class="skills-grid active">
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">Java</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">C</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">C++</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">Python</span>
+        </div>
+        <div class="skill-card glass-card tilt-card" style="grid-column: span 2;">
+          <span class="skill-name">Data Structure and Algorithms in Java</span>
+        </div>
+      </div>
+
+      <!-- Web & Databases Tab -->
+      <div id="web" class="skills-grid">
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">HTML</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">CSS</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">Javascript (Basics)</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">ASP.NET MVC</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">MySQL</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">MongoDB</span>
+        </div>
+      </div>
+
+      <!-- Tools & IDEs Tab -->
+      <div id="tools" class="skills-grid">
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">GitHub</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">Git</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">VS Code</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">Visual Studio Community 2022</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">PyCharm</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">NetBeans</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">Code::Blocks</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">Xcode</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">MySQL Workbench</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">MongoDB Compass</span>
+        </div>
+      </div>
+
+      <!-- Concepts Tab -->
+      <div id="concepts" class="skills-grid">
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">Operating Systems</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">Machine Learning</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">Computer Networks</span>
+        </div>
+        <div class="skill-card glass-card tilt-card">
+          <span class="skill-name">AWS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="section-container reveal">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-content glass-card">
+            <div class="timeline-date">Oct 2025 - Present</div>
+            <h3 class="timeline-title">Senior Web Developer Intern</h3>
+            <h4 class="timeline-company">Bini Technologies Private Limited (Remote)</h4>
+            <p class="timeline-desc">
+              Leading web application development and core integration with cross-platform mobile applications. Focusing
+              on API architecture, responsive database connections, and full-stack flow using ASP.NET and C#.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-content glass-card">
+            <div class="timeline-date">Apr 2025 - Sep 2025</div>
+            <h3 class="timeline-title">Junior Web Developer Intern</h3>
+            <h4 class="timeline-company">Bini Technologies Private Limited (Remote)</h4>
+            <p class="timeline-desc">
+              Provided development support, completed validation tests, resolved critical bugs, and streamlined code
+              logic using ASP.NET framework and C#.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-content glass-card">
+            <div class="timeline-date">Mar 2025 - Jun 2025</div>
+            <h3 class="timeline-title">R&D Intern</h3>
+            <h4 class="timeline-company">Bini Technologies Private Limited (Remote)</h4>
+            <p class="timeline-desc">
+              Conducted architectural research, built mock-ups, and optimized database queries to structure internal
+              tools.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-container reveal">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass-card tilt-card">
+          <div class="project-header">
+            <span class="project-title">Smart Campus Portal</span>
+            <span class="project-icon">🏛️</span>
+          </div>
+          <p class="project-desc">
+            A comprehensive web application developed for managing CGPA calculation, placement processes, event
+            reservations, canteen tracking, timetables, and ID card balance structures.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">ASP.NET</span>
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">HTML5/CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/santhoshni20" target="_blank" class="project-link" id="project-1-code">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+              Repository
+            </a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card glass-card tilt-card">
+          <div class="project-header">
+            <span class="project-title">Campus Navigation App</span>
+            <span class="project-icon">📍</span>
+          </div>
+          <p class="project-desc">
+            A native mobile app incorporating GPS-based outdoor mapping and indoor guidance with searchable 2D/3D maps,
+            real-time event markers, accessibility routes, and secure campus credentials validation.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Android Studio</span>
+            <span class="tech-tag">GPS API</span>
+            <span class="tech-tag">SDK Integration</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/santhoshni20" target="_blank" class="project-link" id="project-2-code">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+              Repository
+            </a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card glass-card tilt-card">
+          <div class="project-header">
+            <span class="project-title">Early Diabetes Prediction</span>
+            <span class="project-icon">🧪</span>
+          </div>
+          <p class="project-desc">
+            A machine learning web tool deploying a Random Forest model. Evaluates diabetes risk dynamically based on
+            medical details and lifestyle choices with streamlined high-accuracy output.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python / Flask</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">HTML & CSS</span>
+            <span class="tech-tag">Render</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/santhoshni20" target="_blank" class="project-link" id="project-3-code">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+              Repository
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Hackathons Section -->
+    <section id="certs" class="section-container reveal">
+      <h2 class="section-title">Certifications & Achievements</h2>
+      <div class="certs-grid">
+        <div class="cert-card glass-card">
+          <div class="cert-icon">🎓</div>
+          <div>
+            <h3 class="cert-title">Master the Basics and Fundamentals of DBMS</h3>
+            <p class="cert-issuer">Scaler</p>
+          </div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon">📂</div>
+          <div>
+            <h3 class="cert-title">Node.js & MongoDB: Developing Backend DB Applications</h3>
+            <p class="cert-issuer">Coursera</p>
+          </div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon">🐳</div>
+          <div>
+            <h3 class="cert-title">Docker Basics for DevOps</h3>
+            <p class="cert-issuer">Coursera</p>
+          </div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon">☸️</div>
+          <div>
+            <h3 class="cert-title">Kubernetes basics for DevOps</h3>
+            <p class="cert-issuer">Coursera</p>
+          </div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon">🐙</div>
+          <div>
+            <h3 class="cert-title">Github Tutorial / Git Basics for Beginners</h3>
+            <p class="cert-issuer">Great Learning / Coursera</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hacks-container">
+        <h3 style="font-size: 1.8rem; margin-bottom: 32px;">Hackathons & Workshops</h3>
+        <div class="hacks-grid">
+          <div class="hack-card glass-card">
+            <span class="hack-date">Apr 2025</span>
+            <h4 class="hack-name">Ideathon 2K25</h4>
+            <p class="hack-location">RVS College of Engineering and Technology</p>
+          </div>
+          <div class="hack-card glass-card">
+            <span class="hack-date">Feb 2025</span>
+            <h4 class="hack-name">AI ML Workshop</h4>
+            <p class="hack-location">Coimbatore Institute Of Technology</p>
+          </div>
+          <div class="hack-card glass-card">
+            <span class="hack-date">Oct 2024</span>
+            <h4 class="hack-name">GenAI Hackathon 2024</h4>
+            <p class="hack-location">KPR Institute of Engineering and Technology</p>
+          </div>
+          <div class="hack-card glass-card">
+            <span class="hack-date">May 2024</span>
+            <h4 class="hack-name">CODHER Hackathon</h4>
+            <p class="hack-location">Anna University (Online)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-container reveal">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's collaborate!</h3>
+          <p>
+            I am seeking entry-level software development roles, internships, or web engineering opportunities. Feel
+            free to reach out via the form, email, or social media!
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <p><a href="mailto:santhoshni0820@gmail.com">santhoshni0820@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <p><a href="tel:+919345584313">+91 (93455 84313)</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <h4>Address</h4>
+                <p>Madurai, Tamil Nadu, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card tilt-card">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="form-name">Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input type="email" id="form-email" class="form-input" placeholder="your.email@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" class="form-input" placeholder="Hello Santhoshni..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="justify-content: center;" id="btn-submit-form">Send
+              Message</button>
+            <div class="form-status" id="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-text">
+        &copy; 2026 Santhoshni S. All rights reserved. Created with 💜 and HTML/CSS/JS.
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/santhoshni20" target="_blank" class="social-icon" id="footer-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/santhoshni-s-95b7b1290/" target="_blank" class="social-icon"
+          id="footer-linkedin">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
